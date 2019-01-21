@@ -1,0 +1,71 @@
+.riddle {
+	border-style: double;
+	border-width: 2px;
+	border-color: green;
+	padding-bottom: 7px;
+	padding-top: 7px;
+	padding-right: 7px;
+	padding-left: 7px;
+	background-image: url(images/desert.jpg)
+	
+}
+
+
+.dumbledore {
+		border-style: dashed;
+		border-width: 7px;
+		border-color: purple;
+		padding-bottom: 3px;
+		padding-top: 3px;
+		padding-left: 3px;
+		background-image: url(images/smiley.gif);
+		background-repeat: no-repeat;
+		background-color: lightgray;
+		background-position: bottom-left; 
+		}
+
+.snape {
+	border-style: dotted;
+	border-width: 7px;
+	border-color: darkgreen;
+	padding-bottom: 8px;
+	padding-top: 8px;
+	padding-left: 4px;
+	padding-right: 4px;
+	background-color: lightblue;
+	color: yellow;
+
+}
+
+.black {
+	border-style: double;
+	border-width: 7px;
+	border-color: gold;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: red;
+    color: white;
+}
+
+div.container { border: 1px solid blue; }
+div.row { border: 1px solid red; }
+div.column { border: 1px solid green; }
+
+p.italic { 
+		font-style: italic;
+		font-color: white;
+		 }
+body {
+	background-color: lightgray;
+}
+
+
+.iucrimson {
+	color: red;
+}
+.purdueyellow {
+	color: yellow;
+}
+

@@ -1,0 +1,105 @@
+<html> 
+	<head> 
+		<title> JavaS Practice </title>
+
+		<script>
+			function newFunction() {
+				document.getElementById("banana1").innerHTML= "Hopefully I pass!";
+			}
+
+			function styleChange1() {
+				var x = document.getElementById("styleChange1");
+				x.style.fontSize = "42px";
+				x.style.backgroundColor = "gold";
+			}
+
+			function styleChange2() {
+				var x = document.getElementById("styleChange2");
+				x.style.fontSize = "55px";
+				x.style.color = "green";
+			}
+
+			function styleChange3() {
+				var x = document.getElementById("styleChange3");
+				x.style.fontSize = "75px";
+				x.style.color = "darkred";
+			}
+
+			function changeImage() {
+				var image = document.getElementById("myImage");
+				if (image.src.match("smalldog")) {
+					image.src = "images/largedog.jpg";
+				} else {
+					image.src = "images/smalldog.jpg";
+				}
+			}
+
+			function changeImage2() {
+				var image= document.getElementById("smallhouse1");
+				if(image.src.match("smallhouse1")) {
+				   image.src ="images/smallhouse.jpg";
+				} else {
+					image.src ="images/hugehouse.jpg";
+				}
+			}
+
+			function checkNumber () {
+				var x, text;
+				x = document.getElementById("num").value;
+
+				if(isNaN(x) || x < 1 || x > 20) {
+					text = "input not valid";
+
+				}
+				else {
+						text= "input accepted";
+						changeImage();
+				}
+				document.getElementById("script1").innerHTML=text;
+			}
+
+
+
+
+
+
+
+		</script>
+
+	</head>
+
+	<body>
+		<h1> JS Practice </h1>
+
+		<p id="banana1"> This is my exam practice! </p>
+		<button type="button" onclick="newFunction()"> Click here! </button>
+
+		<h1> JS + CSS </h1>
+		<p id="styleChange1"> Changin' loooks. </p>
+		<button type="button" onclick="styleChange1()"> Push me! </button>
+
+		<h2> Here we go again...</h2>
+		<p id="styleChange2"> I'm about to get mean and green...</p>
+		<button type="button" onclick="styleChange2()"> CLICK NOW! </button>
+
+		<h2><i>Wine, wine, wine!</i></h2>
+		<p id= "styleChange3"> I love red wine, mostly blackberry wines, white wines are okay... all wine is great.. actually. </p>
+		<button type="button" onclick="styleChange3()"> I LOVE IT! </button>
+
+		<h2> Doggos </h2>
+
+		<img id="myImage" onclick="changeImage()" src="images/smalldog.jpg"/>
+		<p> Click on the papillon to change it to the Newfoundland! </p>
+
+		<h2> Living large... or small? </h2>
+
+		<img id="smallhouse1" onclick="changeImage2()" src="images/smallhouse.jpg"/>
+		<p> Click on the small house to make it huge! </p>
+
+		<h2> Let's count it out </h2>
+
+		<input id="num" type="number">
+		<button type="button" onclick="checkNumber()"> Submit! </button>
+		<p> Enter a number between 1 and 20:</p>
+		<p id="script1"></p>
+
